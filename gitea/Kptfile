@@ -4,7 +4,7 @@ metadata: # kpt-merge: /gitea
   name: gitea
   annotations:
     config.kubernetes.io/local-config: "true"
-    internal.kpt.dev/upstream-identifier: 'kpt.dev|Kptfile|default|gitea'
+    internal.kpt.dev/upstream-identifier: kpt.dev|Kptfile|default|gitea
 upstream:
   type: git
   git:
