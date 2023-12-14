@@ -1,0 +1,26 @@
+apiVersion: kpt.dev/v1
+kind: Kptfile
+metadata: # kpt-merge: network-config/network-config-deploy
+  name: network-config-deploy
+  namespace: network-config
+  annotations:
+    config.kubernetes.io/local-config: "true"
+    internal.kpt.dev/upstream-identifier: 'kpt.dev|Kptfile|network-config|network-config-deploy'
+upstream:
+  type: git
+  git:
+    repo: https://github.com/henderiw-nephio/network-config-operator.git
+    directory: blueprint/network-config
+    ref: main
+upstreamLock:
+  type: git
+  git:
+    repo: https://github.com/henderiw-nephio/network-config-operator.git
+    directory: blueprint/network-config
+    ref: main
+    commit: aa622fabbbdbebca0e6540949ce28554ea83791e
+info:
+  description: network-config controller
+pipeline:
+  validators:
+  - image: gcr.io/kpt-fn/kubeval:v0.3
