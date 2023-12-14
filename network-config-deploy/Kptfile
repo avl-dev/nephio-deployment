@@ -21,3 +21,6 @@ upstreamLock:
     commit: aa622fabbbdbebca0e6540949ce28554ea83791e
 info:
   description: network-config controller
+pipeline:
+  validators:
+  - image: gcr.io/kpt-fn/kubeval:v0.3
