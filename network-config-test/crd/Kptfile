@@ -4,6 +4,5 @@ metadata: # kpt-merge: /crd
   name: crd
   annotations:
     config.kubernetes.io/local-config: "true"
-    internal.kpt.dev/upstream-identifier: 'kpt.dev|Kptfile|default|crd'
 info:
   description: network-config crd

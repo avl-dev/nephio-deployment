@@ -11,8 +11,6 @@ metadata: # kpt-merge: network-config/network-config-controller-leader-election-
     app.kubernetes.io/version: tbd
   name: network-config-controller-leader-election-role-binding
   namespace: network-config
-  annotations:
-    internal.kpt.dev/upstream-identifier: 'rbac.authorization.k8s.io|RoleBinding|network-config|network-config-controller-leader-election-role-binding'
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: Role

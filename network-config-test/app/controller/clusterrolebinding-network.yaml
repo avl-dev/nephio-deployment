@@ -10,8 +10,6 @@ metadata: # kpt-merge: /network-config-controller-network-role-binding
     app.kubernetes.io/part-of: network-config
     app.kubernetes.io/version: tbd
   name: network-config-controller-network-role-binding
-  annotations:
-    internal.kpt.dev/upstream-identifier: 'rbac.authorization.k8s.io|ClusterRoleBinding|default|network-config-controller-network-role-binding'
 roleRef:
   apiGroup: rbac.authorization.k8s.io
   kind: ClusterRole

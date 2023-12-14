@@ -10,8 +10,6 @@ metadata: # kpt-merge: /network-config-controller-network-role
     app.kubernetes.io/part-of: network-config
     app.kubernetes.io/version: tbd
   name: network-config-controller-network-role
-  annotations:
-    internal.kpt.dev/upstream-identifier: 'rbac.authorization.k8s.io|ClusterRole|default|network-config-controller-network-role'
 rules:
 - apiGroups:
   - config.nephio.org
